@@ -258,7 +258,7 @@ html, body {
     position: relative;
 
     text-align: center;
-    height: 10rem;
+    height: min(300px, 25vw);
     width: 100vw;
 
 }
@@ -480,9 +480,9 @@ html, body {
 
 .event_description {
     position: absolute;
-    top: 35%;
+    top: min(30%, 200px);
     left: 1vw;
-    font-size: max(3vw, 1.5rem);
+    font-size: max(3vw, 2.5rem);
     color: var(--secondary-color);
     width: calc(100% - 2vw);
 }
@@ -500,14 +500,14 @@ html, body {
 
 
     position: absolute;
-    bottom: -5%;
-    left: 25%;
+    bottom: -10%;
+    left: 30%;
     transform: translate(-50%, -50%);
     rotation: 7deg;
-    width: calc(min(55vw, 600px) * 0.8);
-    height: calc(min(55vw, 600px) * 0.35);
+    width: calc(min(55vw, 600px) * 0.65);
+    height: calc(min(55vw, 600px) * 0.30);
 
-    font-size: max(5vw, 2.5rem);
+    font-size: min(5vw, 2.5rem);
     font-weight: bold;
     color: var(--secondary-color);
 
@@ -527,8 +527,8 @@ html, body {
 .event_button:hover {
     animation-play-state: paused;
     transform: translate(-50%, -50%);
-    width: calc(min(55vw, 600px) * 1);
-    height: calc(min(55vw, 600px) * 0.5);
+    width: calc(min(55vw, 600px) * 0.8);
+    height: calc(min(55vw, 600px) * 0.4);
     font-size: max(8vw, 4rem);
 }
 
