@@ -396,11 +396,11 @@ function initializeTheme() {
     function switchThemeImages(isDark) {
 
         const imageMap = {
-            'images/Hike icon.png': 'images/light Hike icon.png',
-            'images/Phone.png': 'images/light Phone.png',
-            'images/Camera.png': 'images/light Camera.png',
-            'images/Mail.png': 'images/light Mail.png',
-            'images/Event Card.png': 'images/light Event Card.png'
+            'images/Hike icon.png': 'images/Light Hike icon.png',
+            'images/Phone.png': 'images/Light Phone.png',
+            'images/Camera.png': 'images/Light Camera.png',
+            'images/Mail.png': 'images/Light Mail.png',
+            'images/Event Card.png': 'images/Light Event Card.png'
         };
 
         // Get all the images in the document
