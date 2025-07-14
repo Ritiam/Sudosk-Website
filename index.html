@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SUDOSK</title>
+    <link rel="stylesheet" href="new_style.css">
+    <script defer src="new_script.js"></script>
+</head>
+<body>
+
+<div class="language_buttons">
+    <button class="language_button active" onclick="changeLanguage('tr')" id="tr-btn">TR</button>
+    <button class="language_button disabled" onclick="changeLanguage('en')" id="en-btn">EN</button>
+</div>
+
+
+<button class="color_button disabled" id="sun"><img src="images/Sun.png"></button>
+<button class="color_button active" id="moon"><img src="images/Moon.png"></button>
+
+
+
+<main class="container">
+
+    <img src="images/Mountain.png" alt="Mountain Dark" class="mountain_img dark">
+    <img src="images/Light Mountain.png" alt="Mountain Light" class="mountain_img light">
+
+    <section class="intro">
+        <h1>SUDOSK</h1>
+        <div class="cloud" id="cloud1">
+            <img src="images/cloud 1.png" alt="Cloud Image">
+        </div>
+        <div class="cloud" id="cloud2">
+            <img src="images/cloud 2.png" alt="Cloud Image">
+        </div>
+        <div class="cloud" id="cloud3">
+            <img src="images/cloud 3.png" alt="Cloud Image">
+        </div>
+        <img src="images/Weather wheel.png" alt="Weather Wheel" class="weather_wheel">
+    </section>
+
+
+    <section class="club_description hidden">
+        <h2 data-translate="about_us">Kulübümüz hakkında</h2>
+        <p data-translate="about_description">Sudosk öyle bi kulüp ki anlatamam hani tırmanan var atlayan var dalan var zıplayan var kaçan var kovalayan var uzunu var kısası var kızı var erkeği var ülker çikolatalı gofreti seven yok ee'cisi var va'cisi var var da var</p>
+    </section>
+
+
+    <section class="our_group">
+        <div class="slot_row" id="slot_row_1">
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="president_job" class="job_description"> Yönetiyolar felan çok da bi şey yaptıkları yok aslında </div>
+                <div data-translate="president_name" class="nameplate"> Mert Ali ve Buket </div>
+                <p data-translate="president">Başkanlar</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="secretary_job" class="job_description"> Yaz kızım yaz </div>
+                <div data-translate="secretary_name" class="nameplate"> Elif </div>
+                <p data-translate="secretary">Sekreter</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="treasurer_job" class="job_description"> Paracıklarrrr </div>
+                <div data-translate="treasurer_name" class="nameplate"> Elif </div>
+                <p data-translate="treasurer">Sayman</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="wall_job" class="job_description"> Salı günleri gidip duvar aç sonra kenara geçip yat </div>
+                <div data-translate="wall_name" class="nameplate"> Umut ve İlkin </div>
+                <p data-translate="wall">Duvar</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="education_job" class="job_description"> Neymiş efendim karabinaymış, ısıracaksın o duvarı </div>
+                <div data-translate="education_name" class="nameplate"> Buket? </div>
+                <p data-translate="education">Eğitim</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="storage_job" class="job_description"> Yalnız o tulum öyle depolanmaz kardeşim </div>
+                <div data-translate="storage_name" class="nameplate"> Öykü ve Mert Ali? </div>
+                <p data-translate="storage">Depo</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="transportation_job" class="job_description"> Shuttle uçak tren helikopter, hepsi bu adamda </div>
+                <div data-translate="transportation_name" class="nameplate"> Can </div>
+                <p data-translate="transportation">Ulaşım</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="sponsors_job" class="job_description"> NOLUR ARTIK SPONSOR OLUN NOLURR </div>
+                <div data-translate="sponsors_name" class="nameplate"> Talha </div>
+                <p data-translate="sponsors">Sponsorluk</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="media_job" class="job_description"> Reels? Çekildi. Hikaye? Çıkıldı. Duyuru? Geçildi. </div>
+                <div data-translate="media_name" class="nameplate"> Ahsen </div>
+                <p data-translate="media">Medya</p>
+            </div>
+            <div class="slot_box four_p">
+                <div class="inner"></div>
+                <div data-translate="advisor_job" class="job_description"> Bu adamlara var ya bi danışmak lazım </div>
+                <div data-translate="advisor_name" class="nameplate"> Fikret, Alp, Seher ve Efsane </div>
+                <p data-translate="advisor">Danışmanlarımız</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="teacher_job" class="job_description"> Hocammm </div>
+                <div data-translate="teacher_name" class="nameplate"> Murat Hoca</div>
+                <p data-translate="teacher">Hocamız</p>
+            </div>
+        </div>
+        <div class="slot_row" id="slot_row_2">
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="president_job" class="job_description"> Yönetiyolar felan çok da bi şey yaptıkları yok aslında </div>
+                <div data-translate="president_name" class="nameplate"> Mert Ali ve Buket </div>
+                <p data-translate="president">Başkanlar</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="secretary_job" class="job_description"> Yaz kızım yaz </div>
+                <div data-translate="secretary_name" class="nameplate"> Elif </div>
+                <p data-translate="secretary">Sekreter</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="treasurer_job" class="job_description"> Paracıklarrrr </div>
+                <div data-translate="treasurer_name" class="nameplate"> Elif </div>
+                <p data-translate="treasurer">Sayman</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="wall_job" class="job_description"> Salı günleri gidip duvar aç sonra kenara geçip yat </div>
+                <div data-translate="wall_name" class="nameplate"> Umut ve İlkin </div>
+                <p data-translate="wall">Duvar</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="education_job" class="job_description"> Neymiş efendim karabinaymış, ısıracaksın o duvarı </div>
+                <div data-translate="education_name" class="nameplate"> Buket? </div>
+                <p data-translate="education">Eğitim</p>
+            </div>
+            <div class="slot_box two_p">
+                <div class="inner"></div>
+                <div data-translate="storage_job" class="job_description"> Yalnız o tulum öyle depolanmaz kardeşim </div>
+                <div data-translate="storage_name" class="nameplate"> Öykü ve Mert Ali? </div>
+                <p data-translate="storage">Depo</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="transportation_job" class="job_description"> Shuttle uçak tren helikopter, hepsi bu adamda </div>
+                <div data-translate="transportation_name" class="nameplate"> Can </div>
+                <p data-translate="transportation">Ulaşım</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="sponsors_job" class="job_description"> NOLUR ARTIK SPONSOR OLUN NOLURR </div>
+                <div data-translate="sponsors_name" class="nameplate"> Talha </div>
+                <p data-translate="sponsors">Sponsorluk</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="media_job" class="job_description"> Reels? Çekildi. Hikaye? Çıkıldı. Duyuru? Geçildi. </div>
+                <div data-translate="media_name" class="nameplate"> Ahsen </div>
+                <p data-translate="media">Medya</p>
+            </div>
+            <div class="slot_box four_p">
+                <div class="inner"></div>
+                <div data-translate="advisor_job" class="job_description"> Bu adamlara var ya bi danışmak lazım </div>
+                <div data-translate="advisor_name" class="nameplate"> Fikret, Alp, Seher ve Efsane </div>
+                <p data-translate="advisor">Danışmanlarımız</p>
+            </div>
+            <div class="slot_box one_p">
+                <div class="inner"></div>
+                <div data-translate="teacher_job" class="job_description"> Hocammm </div>
+                <div data-translate="teacher_name" class="nameplate"> Murat Hoca</div>
+                <p data-translate="teacher">Hocamız</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="upcoming_event hidden">
+
+        <div class="event_card">
+            <div data-translate="this_week" class="event_announcement"> Bu hafta ne var? </div>
+            <div class="event_name">
+                <span data-translate="event_name">Hike</span>
+                <img src="images/Hike icon.png" alt="Event Image">
+                <img src="images/Hike icon.png" alt="Event Image">
+                <img src="images/Hike icon.png" alt="Event Image">
+            </div>
+
+            <div class="event_description">
+                <p> <span data-translate="event_loc_label">Mekan:</span> <span data-translate="event_loc">Belgrad ormanı</span> </p>
+                <p> <span data-translate="event_date_label">Tarih:</span> <span data-translate="event_date">30 Şubat pazartesi</span> </p>
+                <p> <span data-translate="event_diff_label">Zorluk:</span> <span data-translate="event_diff">Orta</span> </p>
+            </div>
+
+            <button data-translate="event_button" class="event_button">KATIL</button>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="communication">
+        <button class="communication_block" id="whatsapp_link">
+            <p data-translate="whatsapp">Whatsapp linkimiz</p>
+            <img src="images/Phone.png" alt="WhatsApp Icon" class="com_icon">
+        </button>
+        <button class="communication_block" id="instagram_link">
+            <p data-translate="instagram">Instagram hesabımız</p>
+            <img src="images/Camera.png" alt="Instagram Icon" class="com_icon">
+        </button>
+        <div class="communication_block" id="club_mail">
+            <p data-translate="mail_adress">sudosk@sabanciuniv.edu</p>
+            <img src="images/Mail.png" alt="Mail Icon" class="com_icon">
+        </div>
+        <button data-translate="mail_list" class="mail_list"><p>Mail Listimiz</p></button>
+    </section>
+
+
+    <section class="faq">
+        <div class="faq_container">
+            <div class="faq_name"><h2 data-translate="faq_title"> Sıkça Sorulan Sorular </h2></p></div>
+            <details class="faq_category">
+                <summary> <p data-translate="faq_ctg1">Tırmanış Duvarı Hakkında</p> </summary>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c1_q1">Ne zamanları kullanabilirim?</span></summary>
+                    <div data-translate="faq_c1_q1_a" class="faq_answer"> Tırmanış duvarı aksini belirten bir duyuru geçilmedikçe her çarşamba günü 18.00 ve 22.00 araları okuldaki herkesin kullanımına açık. Salı günü dışında odayı kullanmak isteyen üyelik alarak spor salonu açık olduğu sürece istedikleri zaman odaya girebilirler.</div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c1_q2">Nasıl Duvar Üyesi Olunur?</span></summary>
+                    <div data-translate="faq_c1_q2_a" class="faq_answer"> Dönemin başında whatsapp grupları ve mail liste giden üyelik formu üstünden kayıt olmanız yeterli, kayıt için herhangi bir deadline yok. Form atıldıktan sonraki 1 hafta boyunca indirimli, yakalamanızı öneririz :).</div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c1_q3">Yeni başlayanlar için öneriler?</span></summary>
+                    <div data-translate="faq_c1_q3_a" class="faq_answer"> Yapamadığınız bir rotaya kitlenip kalmayın, farklı rotalar deneyin, önceki rotada işinize yarayacak bi şeyler keşfedebilirsiniz. Çıkamadığınız bir rota varsa o rotayı bitirenlere danışabileceğinizi unutmayın. Sizden daha hızlı ilerleyen kişiler olabilir, moral bozmak yok, herkesin temposu farklı. Eğlenmeyi de unutmayın, bu en önemlisi. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c1_q4">Duvarda nelere dikkat etmem gerek?</span></summary>
+                    <div data-translate="faq_c1_q4_a" class="faq_answer"> Isınmayı sakın unutmayın, salı günleri orada bulunacak arkadaşlarımızdan da "güvenli düşüş" nasıl yapılır öğretmelerini isteyin. Tırmanan kişilerin altında beklemeyin. Spor salonundan ağırlık veya benzeri ekipmanlar getirmeyin. Ve başkalarına karşı saygılı olmayı unutmayın. </div>
+                </details>
+            </details>
+
+            <details class="faq_category">
+                <summary> <p data-translate="faq_ctg2">Eğitimlerimiz Hakkında</p> </summary>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c2_q1">Hangi eğitimler var?</span></summary>
+                    <div data-translate="faq_c2_q1_a" class="faq_answer"> Temel ve ileri düzey kampçılık ile yine temel ve ileri düzey tırmanış eğitimleri veriyoruz. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c2_q2">Eğitimlerin gidişatı nasıl oluyor?</span></summary>
+                    <div data-translate="faq_c2_q2_a" class="faq_answer"> Temel eğitimleri SUDOSK YK’ları olarak biz veriyoruz. İleri seviye eğitimleri kulüp hocamız veriyor. Derslerimiz kampüste oluyor. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c2_q3">Eğitimleri neden almalıyım?</span></summary>
+                    <div data-translate="faq_c2_q3_a" class="faq_answer"> Temel eğitimler ileri eğitimlerin kilidini açıyor. Ayrıca kamp veya tırmanış eğitimini alarak yaptığımız genel kamp ve tırmanış etkinliklerine katılabilirsiniz! </div>
+                </details>
+            </details>
+
+            <details class="faq_category">
+                <summary> <p data-translate="faq_ctg3">Malzeme kullanımı ve Depo Hakkında</p> </summary>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c3_q1">Malzemeleri nasıl kullanabilirim?</span></summary>
+                    <div data-translate="faq_c3_q1_a" class="faq_answer"> Her etkinlik öncesi o etkinlik için gerekli malzemeler sorumlular tarafından katılımcılara verilmekte, verilen malzemeleri görevine uygun ve belirtilen şekilde kullandığınız sürece istediğiniz gibi kullanabilirsiniz. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c3_q2">etkinlik sonrası malzemeleri ne yapmam lazım?</span></summary>
+                    <div data-translate="faq_c3_q2_a" class="faq_answer"> Malzemeleri, etkinlik sonrası whatsapp grubuna ve mail listtekilere atılacak son teslim tarihinden önce depo sorumlusuna vermeniz lazım. Çamurlanmış eşyaları yıkamayı unutmayın. </div>
+                </details>
+            </details>
+
+            <details class="faq_category">
+                <summary> <p data-translate="faq_ctg4">Etkinliklerimiz Hakkında</p> </summary>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c4_q1">Ne tür etkinlikler düzenleniyor?</span></summary>
+                    <div data-translate="faq_c4_q1_a" class="faq_answer"> Yıl boyunca hike, oryantiring, bisiklet, kamp ve tırmanış etkinlikleri düzenliyoruz. Bunun yanında ara sıra kafa dağıtmak için içmecelerimiz de oluyor :) </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c4_q2">Etkinlikler ne sıklıkla oluyor?</span></summary>
+                    <div data-translate="faq_c4_q2_a" class="faq_answer"> Her haftasonu bir etkinlik düzenliyoruz fakat etkinliklerimiz doğa sporları olduğu için hava koşulları ve benzeri faktörler uygun değilse -nadir de olsa- iptal etmemiz veya etkinliği değiştirmemiz gerekebiliyor. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c4_q3">Etkinliklere nasıl katılabilirim?</span></summary>
+                    <div data-translate="faq_c4_q3_a" class="faq_answer"> Whatsapp ve mail list'e atılacak olan etkinlik formundan kayıt yapabilirsiniz.</div>
+                </details>
+            </details>
+
+            <details class="faq_category">
+                <summary> <p data-translate="faq_ctg5">Olimpos Etkinliği Hakkında</p> </summary>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c5_q1">Olimpos etkinliği tam olarak ne?</span></summary>
+                    <div data-translate="faq_c5_q1_a" class="faq_answer"> Hike, tekne gezisi ve bol bol tırmanış (deep water solo dahil) yaptığımız, konakladığımız yerdeki çardaklarda veya ateş etrafında sohbet ettiğimiz, Sabancı'nın yoğun temposundan kaçmak için en güzel fırsatlardan biri olan ve kulübümüzün her yıl yaptığı en büyük etkinliği. </div>
+                </details>
+                <details class="faq_question">
+                    <summary><span data-translate="faq_c5_q2">Nerede ve ne zaman oluyor?</span></summary>
+                    <div data-translate="faq_c5_q2_a" class="faq_answer"> Antalya'da Bayram's Treehouses'da konaklıyoruz, 2. dönemin ortalarında yapılıyor ve o yıl belirlenmiş tarihe göre 3 veya 4 gece kalıyoruz. </div>
+                </details>
+            </details>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>
